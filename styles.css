@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue-ncs: #108DCDff;
+    --raw-umber: #955F3Cff;
+    --yale-blue: #173F73ff;
+    --cerulean: #236B87ff;
+    --myrtle-green: rgb(177, 233, 235);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--myrtle-green);
+}
+
+header,
+footer {
+    height: 50px;
+}
+
+header {
+    border-bottom: 3px solid;
+}
+
+footer {
+    border-top: 3px solid;
+}
+
+main {
+    flex: 1;
+}
