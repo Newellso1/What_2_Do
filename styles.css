@@ -33,9 +33,10 @@ header {
 }
 
 header h1 {
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     font-weight: 400;
     font-size: medium;
+    color: var(--cerulean);
 }
 
 footer {
@@ -44,10 +45,16 @@ footer {
 
 footer ul li {
     display: inline;
+    letter-spacing: 1px;
 }
 
 footer li {
     margin: 0 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cerulean);
 }
 
 main {
@@ -61,10 +68,11 @@ main {
 .projectContainer {
     display: flex;
     flex-direction: column;
+    place-content: center;
     place-items: center;
     min-width: 90%;
     height: 80%;
-    border: 1px solid;
+    
 }
 
 .projectContainer h2 {
@@ -77,15 +85,39 @@ main {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    filter: drop-shadow(0 0 1px var(--cerulean));
+    filter: drop-shadow(0 0 1px var(--yale-blue));
 }
 
 /* form styles */
 
 form {
-    display: inline;
+    display: flex row;
+    place-items: center;
+    margin-top: 15px;
+}
+
+form input{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 1px var(--cerulean));
+}
+
+ol {
+    margin-top: 15px;
+}
+
+ol li {
+    margin: 5px 0;
+    background-color: ;
 }
 
 #button {
     display: inline;
+    color: var(--cerulean);
+    transition: color 200ms ease-in-out;
+}
+
+#button:hover{
+    color: var(--yale-blue);
 }
