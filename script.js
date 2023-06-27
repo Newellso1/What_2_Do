@@ -4,4 +4,7 @@ $('#button').click(function (){
     $('input[name=listItem]').val('');
 });
 
+$('#trash').click(function(){
+    $('.listContainer li').remove();
+})
 $('ol').sortable();
