@@ -32,6 +32,12 @@ header {
     border-bottom: 3px solid;
 }
 
+header h1 {
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: medium;
+}
+
 footer {
     border-top: 3px solid;
 }
@@ -72,4 +78,14 @@ main {
     background-clip: text;
     color: transparent;
     filter: drop-shadow(0 0 1px var(--cerulean));
+}
+
+/* form styles */
+
+form {
+    display: inline;
+}
+
+#button {
+    display: inline;
 }
