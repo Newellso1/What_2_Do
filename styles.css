@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto;
 }
 
 :root {
     --blue-ncs: #108DCDff;
     --raw-umber: #955F3Cff;
-    --yale-blue: #173F73ff;
+    --yale-blue: rgb(16, 34, 56);
     --cerulean: #236B87ff;
-    --myrtle-green: rgb(177, 233, 235);
+    --myrtle-green: rgb(217, 252, 253);
 }
 
 body {
@@ -22,6 +23,9 @@ body {
 header,
 footer {
     height: 50px;
+    display: flex;
+    place-content: center;
+    place-items: center;
 }
 
 header {
@@ -32,6 +36,40 @@ footer {
     border-top: 3px solid;
 }
 
+footer ul li {
+    display: inline;
+}
+
+footer li {
+    margin: 0 20px;
+}
+
 main {
     flex: 1;
+    width: 100%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    min-width: 90%;
+    height: 80%;
+    border: 1px solid;
+}
+
+.projectContainer h2 {
+    font-size: 6em;
+    font-style: italic;
+    font-weight: 900;
+    background: url('/images/space.jpg');
+    background-position: center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 0 1px var(--cerulean));
 }
