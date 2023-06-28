@@ -105,7 +105,6 @@ main {
     place-content: center;
     background-color: white;
     min-width: 300px;
-    /* transform: skewX(-09deg); */
 }
 
 /* form styles */
@@ -147,6 +146,10 @@ ol li {
     list-style: decimal inside; 
 }
 
+ol li:nth-child(odd) {
+    color: var(--blue-ncs);
+}
+
 
 span {
     color: rgba(255, 99, 71, 0.623);
@@ -155,7 +158,8 @@ span {
 }
 
 span:hover {
-    color: rgba(255, 99, 71, 0.877)}
+    color: rgba(255, 99, 71, 0.877)
+}
 
 .buttons {
     display: flex;
@@ -169,6 +173,7 @@ span:hover {
     color: var(--cerulean);
     transition: color 200ms ease-in-out;
 }
+
 
 #button:hover{
     color: var(--yale-blue);
