@@ -18,7 +18,7 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    background-image: url(images/space.jpg);
+    background-image: url('./images/space.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -89,7 +89,7 @@ main {
     font-size: 4.8em;
     font-style:italic;
     font-weight: 900;
-    background: url('images/space.jpg');
+    background: url('./images/space.jpg');
     background-position: center;
     background-size: cover;
     -webkit-background-clip: text;
