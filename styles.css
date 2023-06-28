@@ -8,7 +8,7 @@
 :root {
     --blue-ncs: #108DCDff;
     --raw-umber: #955F3Cff;
-    --yale-blue: rgb(16, 34, 56);
+    --yale-blue: rgb(14, 55, 104);
     --cerulean: #236B87ff;
     --myrtle-green: rgb(217, 252, 253);
 }
@@ -60,6 +60,12 @@ footer li {
 footer a {
     text-decoration: none;
     color: var(--cerulean);
+    font-size: 0.9em;
+    transition: color 200ms ease-in-out;
+}
+
+footer a:hover{
+    color: var(--yale-blue);
 }
 
 main {
@@ -132,15 +138,24 @@ form input{
 
 ol {
     margin-top: 10px;
-
 }
 
 ol li {
     margin: 5px 0;
     color: var(--cerulean);
     background-color: white;
-    list-style: decimal inside;
+    list-style: decimal inside; 
 }
+
+
+span {
+    color: rgba(255, 99, 71, 0.623);
+    transition: color 200ms ease-in-out;
+    font-size: 0.85em;
+}
+
+span:hover {
+    color: rgba(255, 99, 71, 0.877)}
 
 .buttons {
     display: flex;
